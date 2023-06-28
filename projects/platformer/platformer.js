@@ -21,32 +21,33 @@ $(function () {
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
 
-    /**
-     * Uncomment the loops below to add a "grid" to your platformer game's screen
+    /** 
      * The grid will place both horizontal and vertical platforms incremented 100 pixels apart
      * This can give you a better idea of where to create new platforms
      * You won't be able to play the game while these lines are uncommented
      * Comment the lines out to remove the grid
      */
 
-    // Loop to create vertical grid lines
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, 0, 1, canvas.height);
+    //Loop to create vertical grid lines
+    //for (let i = 100; i < canvas.width; i += 100) {
+    // createPlatform(i, 0, 1, canvas.height);
     // }
 
     // Loop to create horizontal gride lines
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(0, i, canvas.width, 1);
+    //for (let i = 100; i < canvas.height; i += 100) {
+    //createPlatform(0, i, canvas.width, 1);
     // }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
 
-    // TODO 1
-    // Create platforms
-    // You must decide the x position, y position, width, and height of the platforms
-    // example usage: createPlatform(x,y,width,height)
+    createPlatform(20, 200, 70, 10)
+    createPlatform(30, 250, 70, 10)
+    createPlatform(50, 400, 70, 10)
+    createPlatform(150, 150, 70, 10)
+    createPlatform(300, )
+
 
 
 
@@ -56,7 +57,7 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+createCollectable(diamond, 50, 400, )
 
 
 
@@ -68,7 +69,7 @@ $(function () {
 
 
 
-
+createCannon("right", 50, 4000)
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
