@@ -30,23 +30,25 @@ $(function () {
 
     //Loop to create vertical grid lines
     //for (let i = 100; i < canvas.width; i += 100) {
-    // createPlatform(i, 0, 1, canvas.height);
-    // }
+    //createPlatform(i, 0, 1, canvas.height);
+    //}
 
-    // Loop to create horizontal gride lines
+    //Loop to create horizontal gride lines
     //for (let i = 100; i < canvas.height; i += 100) {
     //createPlatform(0, i, canvas.width, 1);
-    // }
+    //}
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
 
-    createPlatform(20, 200, 70, 10)
-    createPlatform(30, 250, 70, 10)
-    createPlatform(50, 400, 70, 10)
-    createPlatform(150, 150, 70, 10)
-    createPlatform(300, )
+    createPlatform(20, 200, 90, 10)
+    createPlatform(490, 300, 100, 10)
+    createPlatform(150, 400, 150, 10)
+    createPlatform(600, 500, 250, 10)
+    createPlatform(900, 500, 70, 10)
+    createPlatform(1000, 639, 80, 10)
+    createPlatform(1085, 500, 95, 10)
 
 
 
@@ -57,7 +59,9 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-createCollectable(diamond, 50, 400, )
+createCollectable("diamond", 650, 300, 5, )
+createCollectable("grace", 500, 150, 2, )
+createCollectable("steve", 1085, 380, 5, )
 
 
 
@@ -68,8 +72,9 @@ createCollectable(diamond, 50, 400, )
     // example usage: createCannon(side, position, delay, width, height)
 
 
-
-createCannon("right", 50, 4000)
+createCannon("left", 300, 1500)
+createCannon("right", 800, 5)
+createCannon("top", 750, 1000)
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
